@@ -1,0 +1,14 @@
+
+.country__favorite[data-exists="yes"] .remove__fav {
+    display: inline;
+}
+.country__favorite[data-exists="yes"] .add__fav {
+    display: none;
+}
+
+.country__favorite[data-exists="no"] .add__fav {
+    display: inline;
+}
+.country__favorite[data-exists="no"] .remove__fav {
+    display: none;
+}
