@@ -19,11 +19,11 @@ function pluginname_load_template( $template ) {
     $page_template_slug     = get_page_template_slug( $post->ID );
 
     if( $page_template_slug == $custom_template_slug ){
-        return  WP_PLUGIN_DIR. '/bone-kirov' .'/templates/'. $custom_template_slug;
+        return  WP_PLUGIN_DIR. '/bone-kirov-main' .'/templates/'. $custom_template_slug;
     } else if($page_template_slug == $fav_template_slug) {
-        return  WP_PLUGIN_DIR. '/bone-kirov' .'/templates/'. $fav_template_slug;
+        return  WP_PLUGIN_DIR. '/bone-kirov-main' .'/templates/'. $fav_template_slug;
     } else if($page_template_slug == $log_in ) {
-        return  WP_PLUGIN_DIR. '/bone-kirov' .'/templates/'. $log_in;
+        return  WP_PLUGIN_DIR. '/bone-kirov-main' .'/templates/'. $log_in;
     }
 
     return $template;
